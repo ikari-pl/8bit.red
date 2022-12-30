@@ -3,3 +3,26 @@
 @import 'application';
 
 //@import 'red/diff';
+body {
+  font-size: 16px;
+}
+h1 {
+  font-size: 2rem;
+}
+* {
+  font-weight: normal !important;
+}
+
+
+//
+//color: #89fbfa;
+//
+//@media screen and (max-width: 1174px)
+//.columns-area__panels__pane--navigational .navigation-panel {
+//  margin: 0;
+//  background: #0402a5;
+//  /* border-left: 1px solid #271010; */
+//  height: calc(100vh - 70px);
+//  border-width: 6px;
+//  border-style: double;
+//  border-color: #80f0fa;
