@@ -2,7 +2,7 @@
 # important settings can be changed from the admin interface.
 
 defaults: &defaults
-  site_title: Mastodon
+  site_title: The 8bit red mastodon
   site_short_description: ''
   site_description: ''
   site_extended_description: ''
@@ -29,12 +29,13 @@ defaults: &defaults
   show_application: true
   system_font_ui: false
   noindex: false
-  theme: 'default'
+  theme: 'red'
   aggregate_reblogs: true
   advanced_layout: false
   use_blurhash: true
   use_pending_items: false
   trends: true
+  trends_as_landing_page: true
   trendable_by_default: false
   crop_images: true
   notification_emails:
@@ -62,6 +63,9 @@ defaults: &defaults
     - administrator
     - mod
     - moderator
+    - retrofun
+    - retrofunpl
+    - ikari
   disallowed_hashtags: # space separated string or list of hashtags without the hash
   bootstrap_timeline_accounts: ''
   activity_api_enabled: true

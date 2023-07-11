@@ -1,0 +1,59 @@
+// Notes!
+// Sass color functions, "darken" and "lighten" are automatically replaced.
+
+html {
+  scrollbar-color: lighten($ui-base-color, 50%) darken($ui-base-color, 50%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: lighten($simple-background-color, 20%);
+}
+::-webkit-scrollbar-track {
+  background: darken($base-overlay-background, 50%);
+}
+
+// Change the colors of button texts
+.button {
+  color: $white;
+
+  &.button-alternative-2 {
+    color: $white;
+  }
+}
+
+// by default borders on inputs are darker, that would make them invisible
+.simple_form {
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="datetime-local"],
+  textarea {
+    font-size: 1rem;
+    color: $primary-text-color;
+    background: darken($ui-base-color, 20%);
+    border: 1px solid lighten($ui-base-color, 24%) !important;
+  }
+}
+
+.compose-panel {
+  background: $simple-background-color;
+
+  .compose-form__autosuggest-wrapper {
+    background: darken($simple-background-color, 20%);
+  }
+}
+
+.compose-form {
+  textarea.autosuggest-textarea__textarea,
+  .spoiler-input__input,
+  .compose-form__modifiers {
+    font-size: 1rem;
+    color: mix($classic-primary-color, $simple-background-color, 95%);
+    background: darken($simple-background-color, 50%);
+  }
+  textarea.autosuggest-textarea__textarea::placeholder {
+    color: mix($classic-primary-color, $simple-background-color, 25%);
+  }
+}
