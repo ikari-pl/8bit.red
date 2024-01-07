@@ -106,8 +106,8 @@ For development with **Docker**, complete the following steps:
 
 - Install Docker Desktop
 - Run `docker compose -f .devcontainer/docker-compose.yml up -d`
-- Run `docker compose -f .devcontainer/docker-compose.yml exec app .devcontainer/post-create.sh`
-- Finally, run `docker compose -f .devcontainer/docker-compose.yml exec app foreman start -f Procfile.dev`
+- Run `docker compose -f .devcontainer/docker-compose.yml exec -w /workspaces/8bit.red app .devcontainer/post-create.sh`
+- Finally, run `docker compose -f .devcontainer/docker-compose.yml exec -w /workspaces/8bit.red app foreman start -f Procfile.dev`
 
 If you are using an IDE with [support for the Development Container specification](https://containers.dev/supporting), it will run the above `docker compose` commands automatically. For **Visual Studio Code** this requires the [Dev Container extension](https://containers.dev/supporting#dev-containers).
 
