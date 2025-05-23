@@ -1,0 +1,87 @@
+@import '../fonts/amstrad_cpc_font';
+
+// Theme: Amstrad CPC Red
+
+// Base Amstrad CPC colors (approximations)
+$black: #000000; // True black for paper/background
+$dark-grey: #212121; // Common border/background color
+$amstrad-yellow: #FFFF00; // (Ink 26)
+$amstrad-cyan: #00FFFF;   // (Ink 20)
+$amstrad-red: #FF0000;     // (Ink 24 or 6 for Bright Red)
+$amstrad-magenta: #FF00FF; // (Ink 25)
+$white: #FFFFFF;         // (Ink 1)
+
+// Color assignments
+$classic-base-color: $black !default; // Black background
+$classic-primary-color: $amstrad-yellow !default; // Yellow text
+$classic-secondary-color: $amstrad-cyan !default; // Cyan for secondary elements/text
+$classic-highlight-color: $amstrad-red !default; // Bright red for highlights
+$amstrad-accent-magenta: $amstrad-magenta !default; // Magenta as an additional accent
+
+// Buttons
+$ui-primary-color: $classic-primary-color !default;
+$ui-secondary-color: $classic-secondary-color !default;
+$ui-highlight-color: $classic-highlight-color !default;
+$ui-button-color: $black !default; // Black text on buttons
+$ui-button-background-color: $classic-primary-color !default; // Yellow buttons
+$ui-button-focus-background-color: darken($classic-primary-color, 10%) !default;
+$ui-button-focus-outline-color: $classic-highlight-color !default; // Red outline
+$ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
+
+$ui-button-secondary-color: $black !default;
+$ui-button-secondary-border-color: $classic-secondary-color !default; // Cyan border
+$ui-button-secondary-focus-background-color: darken($classic-secondary-color, 10%) !default;
+$ui-button-secondary-focus-color: $black !default;
+
+$ui-button-tertiary-color: $amstrad-accent-magenta !default; // Magenta buttons
+$ui-button-tertiary-border-color: lighten($amstrad-accent-magenta, 10%) !default;
+$ui-button-tertiary-focus-background-color: darken($amstrad-accent-magenta, 10%) !default;
+$ui-button-tertiary-focus-color: $black !default;
+
+
+// UI Defaults
+$base-shadow-color: $dark-grey !default;
+$base-overlay-background: rgba($dark-grey, 0.85) !default;
+$base-border-color: $amstrad-cyan !default; // Cyan borders
+$simple-background-color: $classic-base-color !default;
+$valid-value-color: $amstrad-cyan !default; // Cyan for success
+$error-value-color: $classic-highlight-color !default; // Red for errors
+$warning-red: $classic-highlight-color !default;
+$gold-star: $amstrad-yellow !default;
+$red-bookmark: $classic-highlight-color !default;
+
+
+// UI Color Mapping
+$ui-base-color: $classic-base-color !default;
+$ui-base-lighter-color: $dark-grey !default; // Dark grey as lighter base
+// $ui-primary-color defined in buttons
+// $ui-secondary-color defined in buttons
+// $ui-highlight-color defined in buttons
+
+// Text colors
+$primary-text-color: $classic-primary-color !default; // Yellow text
+$darker-text-color: darken($classic-primary-color, 15%) !default; // Darker yellow
+$dark-text-color: $amstrad-accent-magenta !default; // Magenta for some text elements
+$secondary-text-color: $classic-secondary-color !default; // Cyan text
+$highlight-text-color: $classic-highlight-color !default; // Red text for highlights
+$action-button-color: $classic-highlight-color !default;
+$passive-text-color: darken($classic-primary-color, 25%) !default; // Dimmer yellow
+$active-passive-text-color: $classic-primary-color !default;
+
+// Inverted text colors
+$inverted-text-color: $classic-base-color !default; // Black text on light backgrounds
+$lighter-text-color: lighten($classic-primary-color, 10%) !default;
+$light-text-color: $classic-primary-color !default;
+
+// Fonts
+$font-sans-serif: 'Press Start 2P', 'Arial Black', Gadget, sans-serif !default;
+$font-display: 'Press Start 2P', 'Arial Black', Gadget, sans-serif !default;
+$font-monospace: 'Press Start 2P', 'Courier New', Courier, monospace !default;
+
+// CJK fonts
+$cjk-langs: ja, ko, zh-CN, zh-HK, zh-TW;
+
+// Component specific
+$media-modal-media-max-width: 100%;
+$media-modal-media-max-height: 80%;
+$no-gap-breakpoint: 1175px;

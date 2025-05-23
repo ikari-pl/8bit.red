@@ -1,0 +1,45 @@
+// Theme: Old Terminal Red
+
+@import 'old_terminal_red/variables';
+// @import 'fonts/your-terminal-font'; // Placeholder for a specific terminal font
+@import 'application'; // Main application styles
+@import 'old_terminal_red/diff'; // Theme-specific overrides
+
+// Basic body styling (example)
+body {
+  font-family: $font-monospace; // Use the monospace font defined in variables
+  background-color: $classic-base-color; // Black background
+  color: $classic-primary-color; // Amber text
+  font-size: 16px; // Example font size
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $classic-secondary-color; // Green for headings, as an example
+  font-family: $font-display;
+}
+
+a {
+  color: $classic-highlight-color; // Red for links
+  text-decoration: underline;
+}
+
+a:hover {
+  color: lighten($classic-highlight-color, 10%);
+}
+
+// Ensure important UI elements use theme colors
+.button, button {
+  background-color: $ui-button-background-color;
+  color: $ui-button-color;
+  border: 1px solid $ui-button-background-color;
+}
+
+.button:focus, button:focus {
+  outline: $ui-button-focus-outline;
+  background-color: $ui-button-focus-background-color;
+}
+
+// Additional styling to match the "red" theme structure if necessary
+* {
+  font-weight: normal !important; // Matching the * selector from red.scss
+}

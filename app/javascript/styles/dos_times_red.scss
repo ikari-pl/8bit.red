@@ -1,0 +1,48 @@
+// Theme: DOS Times Red
+
+@import 'dos_times_red/variables';
+// @import 'fonts/your-dos-font'; // Placeholder for a specific DOS/Terminal font
+@import 'application'; // Main application styles
+@import 'dos_times_red/diff'; // Theme-specific overrides
+
+// Basic body styling
+body {
+  font-family: $font-monospace; // Use the monospace font defined in variables
+  background-color: $classic-base-color; // DOS Blue background
+  color: $classic-primary-color; // White text
+  font-size: 16px; // Example font size
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $classic-primary-color; // White headings
+  font-family: $font-display;
+  font-weight: bold !important; // DOS often had bolder text for titles
+}
+
+a {
+  color: $classic-highlight-color; // Bright Red for links
+  text-decoration: none; // DOS links often didn't have underlines
+}
+
+a:hover {
+  background-color: $classic-highlight-color; // Red background on hover
+  color: $classic-primary-color; // White text on hover
+}
+
+// Ensure important UI elements use theme colors
+.button, button {
+  background-color: $ui-button-background-color;
+  color: $ui-button-color;
+  border: 1px solid $ui-button-color; // Border color same as text
+  box-shadow: 2px 2px 0px 0px $black; // Simple shadow for a retro feel
+}
+
+.button:focus, button:focus {
+  outline: $ui-button-focus-outline;
+  background-color: $ui-button-focus-background-color;
+}
+
+// Additional styling to match the "red" theme structure if necessary
+* {
+  font-weight: normal !important; // Matching the * selector from red.scss, but can be overridden
+}

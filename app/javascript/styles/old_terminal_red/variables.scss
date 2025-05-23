@@ -1,0 +1,83 @@
+@import '../fonts/vga_text';
+
+// Theme: Old Terminal Red
+
+// Base colors
+$black: #000000;
+$white: #FFFFFF;
+$amber: #FFBF00;
+$green: #00FF00;
+$red: #FF0000;
+
+// Color assignments
+$classic-base-color: $black !default;
+$classic-primary-color: $amber !default; // Amber text
+$classic-secondary-color: $green !default; // Green as an alternative or for secondary elements
+$classic-highlight-color: $red !default; // Red for accents
+
+// Buttons
+$ui-primary-color: $classic-primary-color !default;
+$ui-secondary-color: $classic-secondary-color !default;
+$ui-highlight-color: $classic-highlight-color !default;
+$ui-button-color: $black !default; // Text on buttons
+$ui-button-background-color: $classic-primary-color !default; // Amber buttons
+$ui-button-focus-background-color: darken($classic-primary-color, 10%) !default;
+$ui-button-focus-outline-color: $classic-highlight-color !default; // Red outline on focus
+$ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
+
+$ui-button-secondary-color: $black !default;
+$ui-button-secondary-border-color: $classic-secondary-color !default; // Green border
+$ui-button-secondary-focus-background-color: darken($classic-secondary-color, 10%) !default;
+$ui-button-secondary-focus-color: $black !default;
+
+$ui-button-tertiary-color: lighten($classic-highlight-color, 20%) !default; // Lighter red
+$ui-button-tertiary-border-color: lighten($ui-button-tertiary-color, 20%) !default;
+$ui-button-tertiary-focus-background-color: lighten($ui-button-tertiary-color, 30%) !default;
+$ui-button-tertiary-focus-color: $black !default;
+
+// UI Defaults
+$base-shadow-color: $black !default;
+$base-overlay-background: rgba($black, 0.8) !default;
+$base-border-color: $classic-primary-color !default; // Amber borders
+$simple-background-color: lighten($classic-base-color, 5%) !default; // Slightly lighter black
+$valid-value-color: $green !default; // Green for success
+$error-value-color: $red !default; // Red for errors
+$warning-red: $red !default;
+$gold-star: $amber !default;
+$red-bookmark: $red !default;
+
+
+// UI Color Mapping
+$ui-base-color: $classic-base-color !default;
+$ui-base-lighter-color: lighten($classic-base-color, 10%) !default;
+// $ui-primary-color defined in buttons
+// $ui-secondary-color defined in buttons
+// $ui-highlight-color defined in buttons
+
+// Text colors
+$primary-text-color: $classic-primary-color !default; // Amber text
+$darker-text-color: darken($classic-primary-color, 15%) !default;
+$dark-text-color: darken($classic-primary-color, 30%) !default;
+$secondary-text-color: $classic-secondary-color !default; // Green text
+$highlight-text-color: $classic-highlight-color !default; // Red text for highlights
+$action-button-color: $classic-primary-color !default;
+$passive-text-color: darken($classic-primary-color, 25%) !default;
+$active-passive-text-color: $classic-primary-color !default;
+
+// Inverted text colors
+$inverted-text-color: $classic-base-color !default; // Black text on light backgrounds (if any)
+$lighter-text-color: lighten($classic-primary-color, 15%) !default;
+$light-text-color: $classic-primary-color !default;
+
+// Fonts
+$font-sans-serif: 'PC Senior', monospace !default;
+$font-display: 'PC Senior', monospace !default;
+$font-monospace: 'PC Senior', monospace !default;
+
+// CJK fonts
+$cjk-langs: ja, ko, zh-CN, zh-HK, zh-TW;
+
+// Component specific
+$media-modal-media-max-width: 100%;
+$media-modal-media-max-height: 80%;
+$no-gap-breakpoint: 1175px;
