@@ -1,0 +1,53 @@
+// Theme: Amstrad CPC Red
+
+@import 'amstrad_cpc_red/variables';
+// @import 'fonts/your-amstrad-font'; // Placeholder for 'Press Start 2P' or similar
+@import 'application'; // Main application styles
+@import 'amstrad_cpc_red/diff'; // Theme-specific overrides
+
+// Basic body styling
+body {
+  font-family: $font-sans-serif; // Use the blocky/pixel font defined in variables
+  background-color: $classic-base-color; // Black background
+  color: $classic-primary-color; // Yellow text
+  font-size: 14px; // Amstrad CPC had relatively small text
+  border: 20px solid $dark-grey; // Simulate Amstrad border
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $classic-secondary-color; // Cyan for headings
+  font-family: $font-display;
+  text-transform: uppercase; // Common in Amstrad games/software
+}
+
+a {
+  color: $classic-highlight-color; // Bright Red for links
+  text-decoration: none;
+}
+
+a:hover {
+  color: $classic-primary-color; // Yellow on hover
+  background-color: $classic-highlight-color; // Red background on hover
+}
+
+// Ensure important UI elements use theme colors
+.button, button {
+  background-color: $ui-button-background-color;
+  color: $ui-button-color;
+  border: 2px solid $ui-button-color; // Black border on yellow button
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.button:focus, button:focus {
+  outline: $ui-button-focus-outline; // Red outline
+  background-color: $ui-button-focus-background-color; // Darker yellow
+  color: $black;
+}
+
+// Additional styling to match the "red" theme structure if necessary
+* {
+  font-weight: normal !important;
+  letter-spacing: 1px; // Give a bit of that retro spacing
+}

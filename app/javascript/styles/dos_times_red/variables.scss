@@ -1,0 +1,84 @@
+@import '../fonts/cp437';
+
+// Theme: DOS Times Red
+
+// Base colors
+$dos-blue: #0000AA;
+$white: #FFFFFF;
+$light-gray: #AAAAAA;
+$bright-red: #FF5555; // A common red in DOS applications/errors
+$black: #000000;
+
+// Color assignments
+$classic-base-color: $dos-blue !default; // DOS blue background
+$classic-primary-color: $white !default; // White text
+$classic-secondary-color: $light-gray !default; // Light gray for less prominent text
+$classic-highlight-color: $bright-red !default; // Bright red for highlights, errors, actions
+
+// Buttons
+$ui-primary-color: $classic-primary-color !default;
+$ui-secondary-color: $classic-secondary-color !default;
+$ui-highlight-color: $classic-highlight-color !default;
+$ui-button-color: $dos-blue !default; // Blue text on buttons
+$ui-button-background-color: $white !default; // White buttons
+$ui-button-focus-background-color: darken($white, 10%) !default; // Slightly darker white on focus
+$ui-button-focus-outline-color: $classic-highlight-color !default; // Red outline on focus
+$ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
+
+$ui-button-secondary-color: $dos-blue !default;
+$ui-button-secondary-border-color: $light-gray !default;
+$ui-button-secondary-focus-background-color: darken($light-gray, 10%) !default;
+$ui-button-secondary-focus-color: $dos-blue !default;
+
+$ui-button-tertiary-color: lighten($classic-highlight-color, 15%) !default; // Lighter red
+$ui-button-tertiary-border-color: lighten($ui-button-tertiary-color, 15%) !default;
+$ui-button-tertiary-focus-background-color: $classic-highlight-color !default;
+$ui-button-tertiary-focus-color: $white !default;
+
+
+// UI Defaults
+$base-shadow-color: $black !default;
+$base-overlay-background: rgba($black, 0.7) !default;
+$base-border-color: $light-gray !default;
+$simple-background-color: $dos-blue !default; // Keep it DOS blue
+$valid-value-color: $white !default; // White for valid input (on blue bg)
+$error-value-color: $classic-highlight-color !default; // Red for errors
+$warning-red: $classic-highlight-color !default;
+$gold-star: $white !default; // Using white for stars/icons
+$red-bookmark: $classic-highlight-color !default;
+
+
+// UI Color Mapping
+$ui-base-color: $classic-base-color !default;
+$ui-base-lighter-color: lighten($classic-base-color, 10%) !default; // Slightly lighter blue
+// $ui-primary-color defined in buttons
+// $ui-secondary-color defined in buttons
+// $ui-highlight-color defined in buttons
+
+// Text colors
+$primary-text-color: $classic-primary-color !default; // White text
+$darker-text-color: $classic-secondary-color !default; // Light gray
+$dark-text-color: darken($classic-secondary-color, 20%) !default; // Darker gray
+$secondary-text-color: $classic-secondary-color !default; // Light gray
+$highlight-text-color: $classic-highlight-color !default; // Red text for highlights
+$action-button-color: $classic-highlight-color !default; // Red for actions (e.g. post button)
+$passive-text-color: $classic-secondary-color !default;
+$active-passive-text-color: $classic-primary-color !default;
+
+// Inverted text colors (e.g. for elements on a white background, if any)
+$inverted-text-color: $classic-base-color !default; // Blue text on light backgrounds
+$lighter-text-color: lighten($classic-primary-color, 0%) !default; // White
+$light-text-color: $classic-primary-color !default; // White
+
+// Fonts
+$font-sans-serif: 'PC Senior CP437', monospace !default;
+$font-display: 'PC Senior CP437', monospace !default;
+$font-monospace: 'PC Senior CP437', monospace !default;
+
+// CJK fonts
+$cjk-langs: ja, ko, zh-CN, zh-HK, zh-TW;
+
+// Component specific
+$media-modal-media-max-width: 100%;
+$media-modal-media-max-height: 80%;
+$no-gap-breakpoint: 1175px;

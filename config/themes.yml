@@ -2,3 +2,6 @@ red: styles/red.scss
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+old_terminal_red: styles/old_terminal_red.scss
+dos_times_red: styles/dos_times_red.scss
+amstrad_cpc_red: styles/amstrad_cpc_red.scss
